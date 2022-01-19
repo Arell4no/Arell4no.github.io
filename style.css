@@ -1,0 +1,327 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+  background-image: url("img/default.png");
+}
+a{
+		text-decoration: none;
+		color: fff;
+	}
+
+	a:hover {
+		border-bottom: 1.5px solid #f1f1f1;
+	}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  
+   font-family: Courier, monospace;
+  margin-top: 7%;
+}
+
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 2s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 37% 
+    }
+}
+
+.cursor{
+  width: 15px;
+ border-bottom: 2.2px solid black;
+ margin-bottom: 8px;
+ margin-left: 2px;
+ animation-name: cursorAnimation;
+ animation-duration: 0.7s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes cursorAnimation{
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+.welcomePage p{
+    width: 70%;
+    text-align: center;
+    margin: 20px auto auto auto;
+    line-height: 1.3;
+    position: relative;
+    animation-name: content1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes content1{
+    0% {left: -1000px}
+    100% {left: 0px}
+  }
+
+
+.welcomePage .btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: #111 1px solid;
+    margin: 40px auto auto auto;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes btn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .welcomePage a:hover{
+    background: #abc;
+  }
+
+  .nekoFlex{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+        width: 100%;
+  }
+
+  .welcomePage img{
+
+    position: relative;
+        max-width: 100px;
+    height: auto;
+    animation-name: neko;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+
+  @keyframes neko{
+   0% {opacity: 0;}
+    25% {opacity: 0.25;}
+     50% {opacity: 0.50;}
+      75% {opacity: 0.75;}
+    100% {opacity: 1;}
+  }
+
+    .flexCol{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+  }
+
+   @keyframes content{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .introduction{
+    margin: 40px auto auto auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introduction h1{
+    position: relative;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+
+   @keyframes content{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .introduction #intro{
+    color: #b1b1b1;
+    margin: auto auto 10px auto;
+    border-bottom: 1px solid #555;
+  }
+
+  #profilePicture{
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    min-width: 100px;
+    border-radius: 50%;
+    margin: 20px auto 20px auto;
+    opacity: 90%;
+    position: relative;
+    animation-name: profilePic;
+    animation-duration: 2.5s;
+    animation-delay: 0.1s;
+  }
+
+    @keyframes profilePic{
+    0% {top: -500px}
+    100% {top: 0px}
+  }
+
+
+  #name{
+    font-family: sans-serif;
+    color: #b1b1b1;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  .content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .content p{
+    position: relative;
+    margin: 25px auto auto auto; 
+    width: 60%;
+    color: #818181;
+    line-height: 1.7;
+    text-align: justify;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+   @keyframes content{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .knowledge{
+    display: flex;
+    flex-flow: column;
+
+  }
+  .knowledge h1{
+    font-weight: normal;
+    color:  #b1b1b1;
+    margin: 50px auto 10px auto;
+  }
+
+  .knowledge h2{
+    font-weight: normal;
+    color: darkcyan;
+    margin: 30px auto 30px auto;
+  }
+  .logos{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+
+  .logos div{
+    display: flex;
+    flex-flow: column;
+  }
+  .logos img{
+    max-width: 80px;
+    height: auto;
+    margin-top: 20px;
+  }
+  .logos figure{
+    margin: auto;
+    font-size: 20px;
+  }
+
+  .container1{
+    display: flex;
+    flex-flow: column;
+    border: 3px solid #6F4E30;
+    width: 60%;
+    border-radius: 30px;
+    margin: 20px auto auto auto;
+    padding-bottom: 50px;
+  }
+
+  .about{
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    background-image: url(https://i.gifer.com/3nRI.gif);
+  }
+
+  .about h1{
+    margin: auto;
+    font-weight: normal;
+    color: #333;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+
+   @keyframes content{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .about img{
+    margin: auto;
+    max-width: 100px;
+    height: auto;
+    position: relative;
+    animation-name: pic;
+    animation-duration: 2s;
+  }
+
+    @keyframes pic{
+    0% {bottom: -500px}
+    100% {bottom: 0px}
+  }
+  
+  .about p{
+    margin: 25px auto auto auto; 
+    width: 60%;
+    color: #818181;
+    line-height: 1.7;
+    text-align: justify;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+  }
+
+   @keyframes content{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
